@@ -3,7 +3,10 @@
 ## Demo
 ![效果](https://github.com/gws0920/video-stream/blob/master/public/demo.png)
 
-https://gws0920.github.io/mediaStream-merge-record/
+## 故障排查
+- https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia#examples
+  - https://screen-sharing-controls.glitch.me/
+
 ## 项目启动
 ```
 yarn
