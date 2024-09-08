@@ -19,11 +19,8 @@ const begin = async () => {``
   })
   // 获取屏幕共享
   try {
-    screen = await navigator.mediaDevices.getDisplayMedia({ video: true, audio:  { 
-                        autoGainControl: false, 
-                        echoCancellation: false, 
-                        noiseSuppression: false 
-                    } })
+    const conf = self.conf || true
+    screen = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: conf })
     merger.addStream(screen, {
       x: 0,
       y: 0,
