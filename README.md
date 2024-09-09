@@ -15,7 +15,7 @@ var constraints = { channelCount: 2, noiseSuppression: false, autoGainControl: f
 var screen = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: constraints })
 ```
 
-另外，Chrome `128.0.6613.120` 左右的几个版本都不行
+另外，对于 MacBookAir10,1 Chrome `128.0.6613.120` 左右的几个版本都不行。对于 Mac14,7 Chrome 128.0.6613.120 是支持的
 
 找了一下最开始兼容 macOS `ScreenCaptureKit` 新 API 的这个 [pr](https://chromium-review.googlesource.com/c/chromium/src/+/4774561) 在 Sep 20, 2023 提出的，以及[设计方案](https://docs.google.com/document/d/1v-or4bSTeBjnO5nQe4lNRWtSBAOjD-7coYgqSucg1mU)
 
